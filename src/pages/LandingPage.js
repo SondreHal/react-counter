@@ -1,33 +1,18 @@
-import { useEffect, useState } from "react";
+import { NavLink, Route, Routes } from "react-router-dom";
+
+import IncrementNum from "./landingPage/IncrementNum";
 
 export default function LandingPage() {
-	const [num, setNum] = useState(0);
-
-	useEffect(() => {
-		const seconds = setTimeout(() => {
-			setNum((num) => num + 1);
-		}, 1000);
-
-		return () => clearTimeout(seconds);
-	}, [num]);
-
 	return (
 		<>
-			<h1>{num}</h1>
-			<button
-				onClick={() => {
-					setNum((num) => num - 1);
-				}}
-			>
-				-
-			</button>
-			<button
-				onClick={() => {
-					setNum((num) => num + 1);
-				}}
-			>
-				+
-			</button>
+			<nav>
+				<NavLink to="/" className={({ isActive }) => (isActive ? "btn-active" : "btn")}>
+					Counter
+				</NavLink>
+			</nav>
+			<Routes>
+				<Route path="/" element={<IncrementNum />} />
+			</Routes>
 		</>
 	);
 }
