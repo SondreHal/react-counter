@@ -7,8 +7,10 @@ export default function LandingPage() {
 		const seconds = setTimeout(() => {
 			setNum((num) => num + 1);
 		}, 1000);
+
 		return () => clearTimeout(seconds);
 	}, [num]);
+
 	return (
 		<>
 			<h1>{num}</h1>
