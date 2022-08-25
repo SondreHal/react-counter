@@ -11,7 +11,7 @@ export default function LandingPage() {
 				</NavLink>
 				<NavLink
 					to="/cat-facts"
-					className={({ isActive }) => (isActive ? "btn-active" : "btn")}
+					className={({ isActive }) => (isActive ? "nav-btn-active" : "nav-btn")}
 				>
 					Api - Cat Facts
 				</NavLink>
