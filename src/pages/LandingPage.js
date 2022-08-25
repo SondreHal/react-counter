@@ -9,9 +9,16 @@ export default function LandingPage() {
 				<NavLink to="/" className={({ isActive }) => (isActive ? "btn-active" : "btn")}>
 					Counter
 				</NavLink>
+				<NavLink
+					to="/cat-facts"
+					className={({ isActive }) => (isActive ? "btn-active" : "btn")}
+				>
+					Api - Cat Facts
+				</NavLink>
 			</nav>
 			<Routes>
 				<Route path="/" element={<IncrementNum />} />
+				<Route path="/cat-facts" element={<h1>Hi</h1>} />
 			</Routes>
 		</>
 	);
