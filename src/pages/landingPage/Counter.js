@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { StyledH1 } from "./counter/style";
 
 export default function IncrementNum() {
 	const [num, setNum] = useState(0);
@@ -13,7 +14,8 @@ export default function IncrementNum() {
 
 	return (
 		<>
-			<h1>{num}</h1>
+			<h1>Counter</h1>
+			<StyledH1>{num}</StyledH1>
 			<button
 				onClick={() => {
 					setNum((num) => num - 1);

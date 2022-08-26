@@ -1,6 +1,7 @@
 import { NavLink, Route, Routes } from "react-router-dom";
+import CatFacts from "./landingPage/CatFacts";
 
-import IncrementNum from "./landingPage/IncrementNum";
+import IncrementNum from "./landingPage/Counter";
 
 export default function LandingPage() {
 	return (
@@ -13,12 +14,12 @@ export default function LandingPage() {
 					to="/cat-facts"
 					className={({ isActive }) => (isActive ? "nav-btn-active" : "nav-btn")}
 				>
-					Api - Cat Facts
+					Cat Facts
 				</NavLink>
 			</nav>
 			<Routes>
 				<Route path="/" element={<IncrementNum />} />
-				<Route path="/cat-facts" element={<h1>Hi</h1>} />
+				<Route path="/cat-facts" element={<CatFacts />} />
 			</Routes>
 		</>
 	);
