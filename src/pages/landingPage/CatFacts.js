@@ -1,6 +1,6 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
-import { StyledCenterDiv, StyledCenterUl, StyledP } from "./catFacts/style";
+import { StyledCatH1, StyledCenterDiv, StyledLiP } from "./catFacts/style";
 
 export default function CatFacts() {
 	const [data, setData] = useState();
@@ -25,7 +25,7 @@ export default function CatFacts() {
 		return (
 			<>
 				<header>
-					<h1>Cat Facts</h1>
+					<StyledCatH1>Cat Facts</StyledCatH1>
 				</header>
 				<main>
 					<StyledCenterDiv>
@@ -33,7 +33,7 @@ export default function CatFacts() {
 							{data.map((item, idx) => {
 								return (
 									<li>
-										<StyledP key={idx}>{item.fact}</StyledP>
+										<StyledLiP key={idx}>{item.fact}</StyledLiP>
 									</li>
 								);
 							})}
@@ -45,19 +45,19 @@ export default function CatFacts() {
 	} else if (apiError) {
 		return (
 			<>
-				<h1>Cat Facts</h1>
-				<article>
-					<h2>Content couldn't load, please try again</h2>
-				</article>
+				<header>
+					<StyledCatH1>Cat Facts</StyledCatH1>
+				</header>
+				<h2>Content couldn't load, please try again</h2>
 			</>
 		);
 	} else {
 		return (
 			<>
-				<h1>Cat Facts</h1>
-				<article>
-					<h3>Loading...</h3>
-				</article>
+				<header>
+					<StyledCatH1>Cat Facts</StyledCatH1>
+				</header>
+				<h3>Loading...</h3>
 			</>
 		);
 	}

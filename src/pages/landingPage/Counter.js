@@ -14,7 +14,7 @@ export default function IncrementNum() {
 
 	return (
 		<>
-			<h1>Counter</h1>
+			<StyledH1>Counter</StyledH1>
 			<StyledH1>{num}</StyledH1>
 			<button
 				onClick={() => {
