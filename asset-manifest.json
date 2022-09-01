@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/react-lessons/static/css/main.ddf14491.css",
-    "main.js": "/react-lessons/static/js/main.a664c182.js",
+    "main.js": "/react-lessons/static/js/main.b9958374.js",
     "static/media/Qetalon.otf": "/react-lessons/static/media/Qetalon.d2ffa00dcb5b7e8e4c36.otf",
     "static/media/Amestonsans.otf": "/react-lessons/static/media/Amestonsans.a8c359c2f3079b718e45.otf",
     "index.html": "/react-lessons/index.html",
     "main.ddf14491.css.map": "/react-lessons/static/css/main.ddf14491.css.map",
-    "main.a664c182.js.map": "/react-lessons/static/js/main.a664c182.js.map"
+    "main.b9958374.js.map": "/react-lessons/static/js/main.b9958374.js.map"
   },
   "entrypoints": [
     "static/css/main.ddf14491.css",
-    "static/js/main.a664c182.js"
+    "static/js/main.b9958374.js"
   ]
 }
