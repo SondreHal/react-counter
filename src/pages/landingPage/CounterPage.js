@@ -5,7 +5,6 @@ import { StyledCounterH1 } from "./counter/style";
 
 export default function IncrementNum() {
 	const [num, setNum] = useState(0);
-	const [setNum2] = useState(0);
 	const { count } = useContext(CounterContext);
 
 	useEffect(() => {
@@ -17,10 +16,10 @@ export default function IncrementNum() {
 	}, [num]);
 
 	const decrease = () => {
-		setNum2((num) => num - 1);
+		setNum((num) => num - 1);
 	};
 	const increase = () => {
-		setNum2((num) => num + 1);
+		setNum((num) => num + 1);
 	};
 
 	return (
