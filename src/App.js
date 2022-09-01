@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { HashRouter } from "react-router-dom";
 import "./App.css";
-import { CounterContext } from "./contextState/CounterContext";
+import { CounterContext } from "./contextState/counterContext";
 import LandingPage from "./pages/LandingPage";
 
 export default function App() {

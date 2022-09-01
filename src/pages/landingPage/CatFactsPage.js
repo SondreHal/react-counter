@@ -1,7 +1,7 @@
 import axios from "axios";
 import { useContext, useEffect, useState } from "react";
 import { CounterH1 } from "../../components/style";
-import { CounterContext } from "../../contextState/CounterContext";
+import { CounterContext } from "../../contextState/counterContext";
 import { StyledCatH1, StyledCenterDiv, StyledLiP } from "./catFacts/style";
 
 export default function CatFacts() {

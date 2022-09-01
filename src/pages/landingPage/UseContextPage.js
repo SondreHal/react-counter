@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { CounterContext } from "../../contextState/CounterContext";
+import { CounterContext } from "../../contextState/counterContext";
 import { StyledContextH1 } from "./useContext/style";
 
 export default function UseContext() {

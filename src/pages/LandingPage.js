@@ -1,9 +1,11 @@
 import { Route, Routes } from "react-router-dom";
+import GlassDecoration from "../components/GlassDecoration";
 import { StyledLink, StyledNav } from "../components/style";
-import CatFacts from "./landingPage/CatFacts";
-import IncrementNum from "./landingPage/Counter";
-import UseContext from "./landingPage/UseContext";
+import CatFacts from "./landingPage/CatFactsPage";
+import IncrementNum from "./landingPage/CounterPage";
+import UseContext from "./landingPage/UseContextPage.js";
 
+//Static navbar on top of every page
 export default function LandingPage() {
 	return (
 		<>
@@ -17,10 +19,7 @@ export default function LandingPage() {
 				<Route path="/cat-facts" element={<CatFacts />} />
 				<Route path="/use-context" element={<UseContext />} />
 			</Routes>
-			<div className="glass-1"></div>
-			<div className="glass-2"></div>
-			<div className="glass-3"></div>
-			<div className="glass-4"></div>
+			<GlassDecoration />
 		</>
 	);
 }
