@@ -16,3 +16,10 @@ export const StyledNav = styled.nav`
 	display: flex;
 	margin-bottom: 2em;
 `;
+
+export const CounterH1 = styled.h3`
+	position: absolute;
+	top: 10px;
+	right: 20px;
+	font-family: "Ameston", sans-serif;
+`;

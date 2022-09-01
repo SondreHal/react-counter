@@ -2,6 +2,7 @@ import { Route, Routes } from "react-router-dom";
 import { StyledLink, StyledNav } from "../components/style";
 import CatFacts from "./landingPage/CatFacts";
 import IncrementNum from "./landingPage/Counter";
+import UseContext from "./landingPage/UseContext";
 
 export default function LandingPage() {
 	return (
@@ -14,7 +15,7 @@ export default function LandingPage() {
 			<Routes>
 				<Route path="/" element={<IncrementNum />} />
 				<Route path="/cat-facts" element={<CatFacts />} />
-				<Route path="/use-context" element={<h1>useContext</h1>} />
+				<Route path="/use-context" element={<UseContext />} />
 			</Routes>
 			<div className="glass-1"></div>
 			<div className="glass-2"></div>

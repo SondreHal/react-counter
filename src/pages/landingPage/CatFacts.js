@@ -1,10 +1,13 @@
 import axios from "axios";
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
+import { CounterH1 } from "../../components/style";
+import { CounterContext } from "../../contextState/CounterContext";
 import { StyledCatH1, StyledCenterDiv, StyledLiP } from "./catFacts/style";
 
 export default function CatFacts() {
 	const [data, setData] = useState();
 	const [apiError, setApiError] = useState();
+	const { count } = useContext(CounterContext);
 
 	const GetData = () => {
 		axios
@@ -24,6 +27,7 @@ export default function CatFacts() {
 	if (data) {
 		return (
 			<>
+				<CounterH1>useContext = {count}</CounterH1>
 				<header>
 					<StyledCatH1>Cat Facts</StyledCatH1>
 				</header>

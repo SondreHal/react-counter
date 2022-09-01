@@ -55,6 +55,7 @@ ul {
 	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 	backdrop-filter: blur(1.4px);
 	-webkit-backdrop-filter: blur(1.4px);
+	z-index: -1;
 }
 
 .glass-1 {
